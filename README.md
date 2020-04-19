@@ -45,5 +45,8 @@ Here are some things that could make this plugin better:
 * Modify existing animations created with this plugin
  - Like changing the frame distance (step)
 * Reorganize the texture of the spritesheet acording to names
-
+* Show/Hide sprite names
+* Zoom in/out spritesheet
+* Middle Mouse button move the sheet
+* better organized sprite names
 
