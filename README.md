@@ -16,6 +16,7 @@
 * Go to your Scene which contains:
  - AnimationPlayer
  - Sprite3D
+* Attach the "SpriteSheet" class to your sprite nodew/Hide sprite name
 * Select Both
 * Press **F9 Shortcut key**
 * Window should appear
