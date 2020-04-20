@@ -36,7 +36,8 @@ func create(data=null):
 	sprite = null
 	animation = null
 	for node in selected_nodes:
-		if node is SpriteSheet:
+		if node is Sprite or node is Sprite3D:
+			push_warning("Make sure your sprite contains has one of the following scripts attached :\n*SpriteSheet2D\n* SpriteSheet3D")
 			sprite = node
 		elif node is AnimationPlayer:
 			animation = node

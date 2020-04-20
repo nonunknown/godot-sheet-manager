@@ -13,6 +13,7 @@ func read(_manager):
 		file.close()
 		return
 	manager.container.texture = manager.texture
+	
 	generate_box()
 
 func generate_box():
@@ -20,8 +21,8 @@ func generate_box():
 	file.close()
 	var json = parse_json(text)
 	
-	var spr:SpriteSheet = manager.sprite
-	spr._sprite_data = []
+	var spr = manager.sprite
+	spr._sprite_data = SpriteData.new()
 	
 	for value in json:
 		#height,name,width,x,y
@@ -41,5 +42,11 @@ func generate_box():
 		
 		
 	manager.item_list.sort_items_by_text()
+	print(manager.texture_json)
+	var dir = manager.texture_json
+	var ext = dir.get_extension()
+	dir = dir.replace(ext,"tres")
+	var error = ResourceSaver.save(dir,spr._sprite_data)
+	print(str(error))
 	print("BoxCount: "+str(manager.container.get_child_count()))
 #	print(str(spr._sprite_data))
