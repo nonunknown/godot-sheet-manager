@@ -1,5 +1,7 @@
 # Godot Easy Sheet Manager
 
+This plugin lets the user deal with irregular spritesheets, and automatically generates animations from selected ones.
+
 ![alt text](https://i.imgur.com/F6gqVGB.gif)
 
 ## ChangeLog
