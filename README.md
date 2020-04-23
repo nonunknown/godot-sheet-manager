@@ -24,7 +24,8 @@ This plugin lets the user deal with irregular spritesheets, and automatically ge
 * JSON and PNG file must be the same name, and located in the same folder
 * Go to your Scene which contains:
 	- AnimationPlayer
-	- Sprite (Attach SpriteSheet2D or SpriteSheet3D scripts)
+	- Sprite 
+* **IMPORTANT: Attach SpriteSheet2D or SpriteSheet3D to your Sprite Node**
 * Select Both
 * Press **F9 Shortcut key**
 * Window should appear
