@@ -1,0 +1,9 @@
+{
+	"name":"Easy Sheet Manager",
+	"category":"plugin",
+	"license":"MIT",
+	"godot_version": 3.0,
+	"version": 1,
+	"commit": "latest"
+	
+}
